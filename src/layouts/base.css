@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif+SC:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Crimson Text', Noto Serif SC;
+
+  @apply bg-backcolor;
+}
+
+body {
+  min-height: 100%;
+  @apply px-4;
+}
+
+a {
+  @apply transition-opacity duration-75;
+}
+a:hover {
+  @apply text-opacity-[0.85];
+}
+
+article {
+  & h1:first-child {
+    &::before {
+      @apply hidden;
+    }
+  }
+  @apply break-all;
+  line-height: 1.5;
+  & h1,
+  & h2,
+  & h3,
+  & h4 {
+    @apply text-xl font-light my-4;
+
+    &::before {
+      content: '# ';
+    }
+  }
+
+  & p {
+    @apply my-4;
+
+    text-indent: 2rem;
+  }
+
+  & blockquote {
+    font-family: Han Kaiti GB, Kaiti SC, cursive, serif;
+    margin: 0px;
+    border-left: 0.2rem solid rgb(119, 119, 119);
+    color: rgb(119, 119, 119);
+    padding-left: 1.8rem;
+
+    & > p {
+      text-indent: 0;
+    }
+  }
+
+  & img {
+    @apply max-w-full object-cover;
+  }
+
+  & li {
+    @apply list-disc my-2;
+  }
+
+  & del.spoiler {
+    text-decoration: none;
+  }
+
+  & .spoiler {
+    position: relative;
+    background: currentColor;
+    transition: background 0.5s;
+  }
+
+  & .spoiler:hover {
+    background: transparent;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffc107;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
