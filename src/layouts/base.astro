@@ -1,8 +1,10 @@
 ---
 import Header from '../components/header/index.astro'
+import { QueryClientProvider } from '@tanstack/solid-query'
 import Footer from '../components/footer/index.astro'
 
 import './base.css'
+import { queryClient } from '../utils/query'
 ---
 
 <html lang="zh-hk">
@@ -19,6 +21,7 @@ import './base.css'
       <main>
         <slot />
       </main>
+
       <Footer />
     </div>
   </body>

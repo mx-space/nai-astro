@@ -5,15 +5,21 @@ specifiers:
   '@astrojs/tailwind': 2.1.3
   '@innei/eslint-config-ts': 0.9.7
   '@innei/prettier': 0.9.7
+  '@mx-space/api-client': 1.0.3
+  '@tanstack/solid-query': 4.22.4
   astro: ^1.9.0
   autoprefixer: 10.4.13
+  ky: 0.33.2
   postcss-nesting: 11.0.0
   solid-js: 1.6.9
   tailwindcss: 3.2.4
 
 dependencies:
   '@astrojs/solid-js': 1.2.3_solid-js@1.6.9
+  '@mx-space/api-client': 1.0.3
+  '@tanstack/solid-query': 4.22.4_solid-js@1.6.9
   astro: 1.9.2
+  ky: 0.33.2
   solid-js: 1.6.9
 
 devDependencies:
@@ -539,6 +545,11 @@ packages:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
     dev: false
 
+  /@mx-space/api-client/1.0.3:
+    resolution: {integrity: sha512-WQuyXA8RBHJFB6RDXC1oIMAN4i3/UiJq75Ja9ylMdbOMhKKI1ZcJfGmtrRHBdhY4SScrSlXOBOOIlLnZVMFC/A==}
+    engines: {pnpm: '>=6'}
+    dev: false
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -586,6 +597,19 @@ packages:
     dependencies:
       '@proload/core': 0.3.3
       tsm: 2.3.0
+    dev: false
+
+  /@tanstack/query-core/4.22.4:
+    resolution: {integrity: sha512-t79CMwlbBnj+yL82tEcmRN93bL4U3pae2ota4t5NN2z3cIeWw74pzdWrKRwOfTvLcd+b30tC+ciDlfYOKFPGUw==}
+    dev: false
+
+  /@tanstack/solid-query/4.22.4_solid-js@1.6.9:
+    resolution: {integrity: sha512-QMumuG4xO3HJgLNXeh9bthjdBd+k54osJ6fma3vxCJD0jpYEaL6f74S/hJzgVb/pS0cjoI3X0SLapHKefSYgcQ==}
+    peerDependencies:
+      solid-js: ^1.5.7
+    dependencies:
+      '@tanstack/query-core': 4.22.4
+      solid-js: 1.6.9
     dev: false
 
   /@types/acorn/4.0.6:
@@ -2896,6 +2920,11 @@ packages:
   /kleur/4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
+    dev: false
+
+  /ky/0.33.2:
+    resolution: {integrity: sha512-f6oS2rKUcPu5FzdqCDbFpmzis/JlqFZw8uIHm/jf8Kc3vtnW+VDhuashOAKyBZv8bFiZFZUMNxTC0JtahEvujA==}
+    engines: {node: '>=14.16'}
     dev: false
 
   /levn/0.4.1:

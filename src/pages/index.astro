@@ -1,7 +1,8 @@
 ---
+import Index from './index'
 import BaseLayout from '../layouts/base.astro'
 ---
 
-<div>
-  <BaseLayout />
-</div>
+<BaseLayout>
+  <Index client:load />
+</BaseLayout>
